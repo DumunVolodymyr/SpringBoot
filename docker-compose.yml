@@ -2,14 +2,14 @@ version: '3'
 services:
   lab3-mysql:
     restart: always
-    container_name: lab3-mysql
+    container_name: lab5-mysql
     image: mysql:5.6
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - ./src/main/resources/data:/docker-entrypoint-initdb.d
       - database:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Fredikfs123456
+      MYSQL_ROOT_PASSWORD: Dumun2000
     ports:
       - 3306:3306
   lab6-spring:
@@ -22,7 +22,7 @@ services:
     environment:
       WAIT_HOSTS: mysql:3306
     depends_on:
-      - lab3-mysql
+      - lab5-mysql
 
 volumes:
   database:
