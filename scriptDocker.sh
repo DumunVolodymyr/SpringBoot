@@ -2,7 +2,7 @@
 
 git clone https://github.com/DumunVolodymyr/SpringBoot.git
 
-cd dumunvolodymyr
-docker volume create docker_database
+cd SpringBoot
+docker volume create docker_database1
 docker-compose up
 
