@@ -3,6 +3,6 @@
 git clone https://github.com/DumunVolodymyr/SpringBoot.git
 
 cd SpringBoot
-docker volume create docker_database3
+docker volume create docker_database4
 docker-compose up
 
